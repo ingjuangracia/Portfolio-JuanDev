@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Menu Header-->
+
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">JuanDev</a>
+
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#about-me" onclick="seleccionar()">ACERCA DE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </header>
+    </div>
+
+
+    <!-- Home Section-->
+
+    <section id="home" class="home">
+        <div class="banner-container">
+            <div class="img-container">
+                <img src="img/foto_juan_ gracia.jpeg" alt="">
+            </div>
+            <h1>Juan Gracia</h1>
+            <h2>Front End Developer</h2>
+            <div class="networks">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section-->
+
+    <section id="about-me" class="about-me">
+        <div class="content-section">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Juan Sebastian Gracia</span> Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Quas expedita in consectetur ad facere illo commodi impedit quo sequi, excepturi nam est
+                exercitationem,
+                maxime similique, a corporis illum accusantium natus.</p>
+
+            <div class="fila">
+                <!-- Personal Data-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            +57 3172576997
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ing.juangracia@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicacion</strong>
+                            Barrancabermeja - Santander, Colombia
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Interest-->
+                <div class="col">
+
+                    <h3>Intereses</h3>
+
+                    <div class="interest-container">
+                        <div class="interest">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOGAMES</span>
+
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+
+                        </div>
+
+                        <div class="interest">
+                            <i class="fa-sharp fa-solid fa-video"></i>
+                            <span>CINE</span>
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LEER</span>
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIO</span>
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOGRAFIA</span>
+
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+
+    <section class="skills" id="skills">
+        <div class="content-section">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>REACT JS</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>REACT-ROUTER</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>REACT-REDUX</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT/GITHUB</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Habilidades Comunicativas</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de Adaptacion</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad para Resolver Problemas</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad e Innovacion</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Honestidad e Integridad</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Iniciativa</span>
+                        <div class="skill-bar">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section-->
+
+    <section id="portfolio" class="portfolio">
+        <div class="content-section">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyect">
+                    <a href="https://climateappreact.netlify.app/" target="_blank">
+                        <img src="img/weatherapp.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyect">
+                    <a href="https://rickandmortylocationapp.netlify.app/" target="_blank">
+                        <img src="img/rickandmortyapp.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyect">
+                    <a href="https://ecommercetestapp.netlify.app/" target="_blank">
+                        <img src="img/ecommerceapp.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyect">
+                    <a href="https://quotesapp1.netlify.app/" target="_blank">
+                        <img src="img/quotesapp.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyect">
+                    <a href="https://todolistapp-javascript.netlify.app/" target="_blank">
+                        <img src="img/to_do_listapp.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyect">
+                    <a href="https://www.eltiempo.com/" target="_blank">
+                        <img src="img/p6.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+
+    <section id="contact" class="contact">
+        <div class="content-section">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!--contact form-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Numero Telefonico">
+                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <a href="#home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+
+        <div class="networks">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
