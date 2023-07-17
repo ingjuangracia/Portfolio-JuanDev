@@ -21,7 +21,7 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
-    
+
 
 }
 
@@ -158,6 +158,7 @@ html {
 }
 
 .about-me h2 {
+
     font-size: 48px;
     font-family: Righteous;
     text-align: center;
@@ -177,6 +178,7 @@ html {
 
 .about-me .fila {
     display: flex;
+    margin-top: 70px;
 }
 
 .about-me .fila .col {
@@ -184,10 +186,15 @@ html {
 
 }
 
+.about-me .fila .col .subtitle {
+    text-align: center;
+}
+
 .about-me .fila .col h3 {
     font-size: 28px;
     font-family: 'righteous';
     margin-bottom: 25px;
+
 
 }
 
@@ -574,21 +581,38 @@ footer .arriba {
 
     }
 
+    .about-me .content-section h2 {
+        margin-top: -50px;
+    }
+
+
+    .interest-container {
+        justify-content: center;
+    }
+
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
+
     .about-me .fila {
         display: block;
     }
 
     .about-me .fila .col {
         width: fit-content;
+    }
 
+    .about-me .fila .personal-data,
+    .subtitle {
+        margin-top: 50px;
+    }
+
+    .about-me .fila .col ul li strong {
+        width: 100px;
     }
 
     .skills .fila {
         display: block;
-
     }
 
     .skills .fila .col {
@@ -606,10 +630,13 @@ footer .arriba {
 
     .portfolio .galeria .proyect {
         max-width: 100%;
+        height: 300px;
+        margin-top: 30px;
     }
 
     .portfolio .galeria .proyect img {
         width: 100%;
+        height: 100%;
     }
 
     .contact .fila {
@@ -621,5 +648,7 @@ footer .arriba {
 
 
     }
+
+
 
 }
