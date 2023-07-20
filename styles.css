@@ -169,13 +169,14 @@ html {
     font: 18px;
     line-height: 22px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-me .content-section p span {
     color: #1CB698;
     font-weight: bold;
     font-size: 20px;
-    
+
 }
 
 .about-me .fila {
@@ -587,7 +588,7 @@ footer .arriba {
         margin-top: -50px;
     }
 
-
+    
     .interest-container {
         justify-content: center;
     }
@@ -595,6 +596,10 @@ footer .arriba {
 }
 
 @media screen and (max-width:800px) {
+
+    .about-me .content-section p {
+        text-align: justify;
+    }
 
     .about-me .fila {
         display: block;
