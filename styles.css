@@ -376,11 +376,12 @@ html {
 .portfolio .galeria .proyect {
     position: relative;
     max-width: 340px;
-    height: 200px;
+    height: 230px;
     margin: 10px;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 6px 6px 8px black;
+    background-color: gray;
 
 
 
@@ -388,7 +389,7 @@ html {
 
 .portfolio .galeria .proyect img {
     width: 100%;
-    height: 100%;
+    height: 85%;
     display: block;
     border-radius: 5px;
 }
@@ -397,7 +398,7 @@ html {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 82%;
     text-align: center;
     background: linear-gradient(rgba(28, 128, 152, .8), rgba(28, 128, 152, .8));
     display: flex;
@@ -423,6 +424,14 @@ html {
 
 .portfolio .galeria .proyect .overlay h3:hover {
     margin-bottom: 0px;
+}
+
+.portfolio .galeria .proyect .link-github {
+    text-align: center;
+    margin-top: 3px;
+    font-size: 25px;
+    
+    
 }
 
 /* Contact Section */
