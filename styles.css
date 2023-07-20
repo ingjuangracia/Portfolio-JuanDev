@@ -414,6 +414,18 @@ html {
 
 }
 
+.portfolio .galeria .proyect .overlay p {
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    font-size: 15px;
+    transition: 1s;
+
+
+}
+
+
+
 .portfolio .galeria .proyect .overlay:hover {
     opacity: 1;
 }
