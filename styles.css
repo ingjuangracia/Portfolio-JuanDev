@@ -250,6 +250,11 @@ html {
 
 }
 
+
+.about-me a {
+    text-decoration: none;
+}
+
 .about-me button {
     cursor: pointer;
     background-color: transparent;
@@ -280,6 +285,7 @@ html {
 .about-me button:hover .overlay {
     width: 100%;
 }
+
 
 
 /* Skills Section */
@@ -583,16 +589,7 @@ footer .arriba {
         display: block;
     }
 
-    nav.responsive {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-
-    }
-
+ 
     nav.responsive ul {
         display: block !important;
     }
