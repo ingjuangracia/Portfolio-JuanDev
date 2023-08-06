@@ -46,8 +46,8 @@ html {
 .container-header header ul {
     display: flex;
     list-style: none;
-
 }
+
 
 .container-header header nav ul li a {
     text-align: none;
@@ -56,8 +56,23 @@ html {
     padding: 3px;
     transition: .5s;
     text-decoration: none;
+}
+
+
+.container-header header nav ul li button {
+    text-align: center;
+    align-items: center;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px gray;
+
 
 }
+
+
 
 .container-header header nav ul li a:hover {
     color: #1CB698
@@ -387,7 +402,7 @@ html {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 6px 6px 8px black;
-   
+
 }
 
 .portfolio .galeria .proyect img {
@@ -445,8 +460,8 @@ html {
     text-align: center;
     margin-top: 3px;
     font-size: 25px;
-    
-    
+
+
 }
 
 /* Contact Section */
@@ -583,13 +598,13 @@ footer .arriba {
 @media screen and (max-width:980px) {
     nav {
         display: none;
-    }  
+    }
 
 
     .nav-responsive {
         display: block;
     }
-    
+
     nav.responsive {
         display: block;
         position: absolute;
@@ -598,7 +613,7 @@ footer .arriba {
         background-color: #252A2E;
         width: 180px;
     }
- 
+
     nav.responsive ul {
         display: block !important;
     }
@@ -613,7 +628,7 @@ footer .arriba {
         margin-top: -50px;
     }
 
-    
+
     .interest-container {
         justify-content: center;
     }

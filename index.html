@@ -24,12 +24,13 @@
 
             <nav id="nav">
                 <ul>
-                    <li><a href="#home" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#about-me" onclick="seleccionar()">ACERCA DE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contact" onclick="seleccionar()">CONTACTO</a></li>
-                    <li><button><i class="fa-solid fa-language"></i> ES </button></li>
+                    <li><a href="#home" data-translate="home">INICIO</a></li>
+                    <li><a href="#about-me" data-translate="aboutMe">ACERCA DE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact" data-translate="contact">CONTACTO</a></li>
+                    <li><button class="changeLanguageBtn" onclick="changeLanguage()" data-translate="languageBtn">
+                        <i class="fa-solid fa-language"></i> EN </button></li>
                 </ul>
 
 
@@ -63,31 +64,27 @@
 
     <section id="about-me" class="about-me">
         <div class="content-section">
-            <h2>Sobre Mi</h2>
-            <p>Hola soy <span>Juan Sebastian Gracia</span>, un apasionado Full Stack Developer. Mi amor por el diseño
-                y la tecnología me ha llevado a explorar el mundo del desarrollo web, mi objetivo es combinar mi
-                creatividad
-                y habilidades técnicas para construir interfaces web hermosas y funcionales que generen un impacto
-                positivo
-                en los usuarios.
-                <br><br>Con conocimientos en HTML, CSS y JavaScript, junto con experiencia en el uso de framework como
-                React, por el Backend con Node js, Express, MongoDb,
-                mi objetivo es seguir creciendo como Full Stack Developer, abrazando nuevas tecnologías y prácticas, y
-                contribuyendo
-                al éxito de proyectos que hagan una diferencia en la vida de las personas.
+            <h2 data-translate="aboutMe">Sobre Mi</h2>
+            <p data-translate="aboutMeText">Hola soy <span>Juan Sebastian Gracia</span>, un apasionado Full Stack
+                Developer. Mi amor por el diseño y la tecnología me ha llevado a explorar el mundo del desarrollo web,
+                mi objetivo es combinar mi creatividad y habilidades técnicas para construir interfaces web hermosas y
+                funcionales que generen un impacto positivo en los usuarios.<br><br>
+                Con conocimientos en HTML, CSS y JavaScript, junto con experiencia en el uso de framework como React,
+                por el Backend con Node js, Express, MongoDb, mi objetivoes seguir creciendo como Full Stack Developer,
+                abrazando nuevas tecnologías y prácticas, y contribuyendo al éxito de proyectos que hagan una diferencia
+                en la vida de las personas.
             </p>
-
 
             <div class="fila">
                 <!-- Personal Data-->
                 <div class="col">
                     <div class="personal-data">
-                        <h3>Datos Personales</h3>
+                        <h3 data-translate="personalData">Datos Personales</h3>
                     </div>
 
                     <ul>
                         <li>
-                            <strong>Telefono:</strong>
+                            <strong data-translate="phone">Telefono:</strong>
                             +57 3172576997
                         </li>
                         <li>
@@ -95,7 +92,7 @@
                             ing.juangracia@hotmail.com
                         </li>
                         <li>
-                            <strong>Ubicacion:</strong>
+                            <strong data-translate="location">Ubicacion:</strong>
                             Barrancabermeja, Colombia
                         </li>
                     </ul>
@@ -105,56 +102,56 @@
                 <!-- Interest-->
                 <div class="col">
                     <div class="subtitle">
-                        <h3>Intereses</h3>
+                        <h3 data-translate="interests">Intereses</h3>
                     </div>
                     <div class="interest-container">
                         <div class="interest">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>VIDEOGAMES</span>
+                            <span data-translate="videogames">VIDEOJUEGOS</span>
 
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <span data-translate="music">MUSICA</span>
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
+                            <span data-translate="travel">VIAJAR</span>
 
                         </div>
 
                         <div class="interest">
                             <i class="fa-sharp fa-solid fa-video"></i>
-                            <span>CINE</span>
+                            <span data-translate="cinema">CINE</span>
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-book"></i>
-                            <span>LEER</span>
+                            <span data-translate="read">LEER</span>
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-dumbbell"></i>
-                            <span>EJERCICIO</span>
+                            <span data-translate="exercise">EJERCICIO</span>
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-camera"></i>
-                            <span>FOTOGRAFIA</span>
+                            <span data-translate="photography">FOTOGRAFIA</span>
 
                         </div>
                         <div class="interest">
                             <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <span data-translate="cars">AUTOS</span>
 
                         </div>
                     </div>
                 </div>
             </div>
             <a href="cv_developer/CV Developer Juan Gracia.pdf" target="_blank">
-                <button>
+                <button data-translate="downloadCV">
                     Descargar CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
                 </button>
@@ -220,44 +217,44 @@
                 <div class="col">
                     <h3>Professional Skills</h3>
                     <div class="skill">
-                        <span>Habilidades Comunicativas</span>
+                        <span data-translate="communicativeSkills">Habilidades Comunicativas</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Capacidad de Adaptacion</span>
+                        <span data-translate="adaptability">Capacidad de Adaptacion</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Capacidad para Resolver Problemas</span>
+                        <span data-translate="abilityToSolveProblems">Capacidad para Resolver Problemas</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad e Innovacion</span>
+                        <span data-translate="creativityInnovation">Creatividad e Innovacion</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span data-translate="teamWork">Trabajo en Equipo</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
 
                     <div class="skill">
-                        <span>Honestidad e Integridad</span>
+                        <span data-translate="honestyIntegrity">Honestidad e Integridad</span>
                         <div class="skill-bar">
 
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Iniciativa</span>
+                        <span data-translate="initiative">Iniciativa</span>
                         <div class="skill-bar">
 
                         </div>
@@ -281,7 +278,8 @@
                         <img src="img/weatherapp.jpg" alt="">
                         <div class="overlay">
                             <h3>Weather App</h3>
-                            <p>Proyecto realizado en React JS consumiendo una Api y manejo de estados</p>
+                            <p data-translate="proyectWeather">Proyecto realizado en React JS consumiendo una Api y
+                                manejo de estados</p>
                         </div>
                     </a>
                 </div>
@@ -291,7 +289,8 @@
                         <img src="img/rickandmortyapp.jpg" alt="">
                         <div class="overlay">
                             <h3>Rick and Morty App</h3>
-                            <p>Proyecto en Html, CSS y React JS consumiendo Api del clima y manejo de Estados</p>
+                            <p data-translate="proyectRickMorty">Proyecto en Html, CSS y React JS consumiendo Api del
+                                clima y manejo de Estados</p>
                         </div>
                     </a>
                 </div>
@@ -301,7 +300,8 @@
                         <img src="img/ecommerceapp.jpg" alt="">
                         <div class="overlay">
                             <h3>Ecommerce App</h3>
-                            <p>Proyecto en Html, CSS y React JS consumiendo Api y manejo de Estados</p>
+                            <p data-translate="proyectEcommerce">Proyecto en Html, CSS y React JS consumiendo Api y
+                                manejo de Estados</p>
                         </div>
                     </a>
                 </div>
@@ -311,7 +311,8 @@
                         <img src="img/quotesapp.jpg" alt="">
                         <div class="overlay">
                             <h3>Quotes App</h3>
-                            <p>Proyecto en Hmtl, CSS y React JS consumiendo Api de generacion de citas</p>
+                            <p data-translate="proyectQuotes">Proyecto en Hmtl, CSS y React JS consumiendo Api de
+                                generacion de citas</p>
                         </div>
                     </a>
                 </div>
@@ -321,7 +322,7 @@
                         <img src="img/to_do_listapp.jpg" alt="">
                         <div class="overlay">
                             <h3> To Do List App</h3>
-                            <p>Proyecto en HTML, CSS y Javascript Vanilla</p>
+                            <p data-translate="proyectToDoList">Proyecto en HTML, CSS y Javascript Vanilla</p>
                         </div>
                     </a>
                 </div>
@@ -331,7 +332,7 @@
                         <img src="img/colors-rgb.jpg" alt="">
                         <div class="overlay">
                             <h3>RGB - Colors</h3>
-                            <p>Proyecto en Html, CSS y Javascript Vanilla</p>
+                            <p data-translate="proyectRgbColors">Proyecto en Html, CSS y Javascript Vanilla</p>
                         </div>
                     </a>
                 </div>
@@ -347,12 +348,13 @@
             <div class="fila">
                 <!--contact form-->
                 <div class="col">
-                    <input type="text" placeholder="Tu Nombre">
-                    <input type="text" placeholder="Numero Telefonico">
-                    <input type="text" placeholder="Correo Electronico">
+                    <input type="text" placeholder="Tu Nombre" data-translate="yourName">
+                    <input type="text" placeholder="Numero Telefonico" data-translate="phoneNumber">
+                    <input type="text" placeholder="Correo Electronico" data-translate="email">
                     <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"
+                        data-translate="message"></textarea>
+                    <button data-translate="sendmessage">
                         Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
