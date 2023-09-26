@@ -21,8 +21,9 @@ html {
     top: 0;
     left: 0;
     z-index: 99;
-
-
+    height: 70px;
+    box-shadow: 1px 1px 2px 2px black;
+  
 }
 
 .container-header header {
@@ -103,11 +104,14 @@ html {
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
+    height: 460px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
     border: 1px solid gray;
     box-shadow: 6px 6px 8px black;
+    margin-top: 90px;
+    
 
 
 }
